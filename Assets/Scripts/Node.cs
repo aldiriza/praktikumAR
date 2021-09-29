@@ -4,15 +4,30 @@ using UnityEngine;
 
 public class Node : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public NodeInput[] InPoints { get; private set; }
+
+    public NodeOutput[] OutPoints { get; private set; }
+
+    public int instanceId;
+
+    private void Awake()
     {
-        
+        InPoints = GetComponentsInChildren<NodeInput>();
+        OutPoints = GetComponentsInChildren<NodeOutput>();
+        for (var i = 0; i < OutPoints.Length; i++)
+        {
+            OutPoints[i].id = i;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public virtual void OnCircuitChange()
     {
-        
+        if (OutPoints == null)
+            return;
+
+        foreach (var Out in OutPoints)
+        {
+            Out.OnCircuitChanged();
+        }
     }
 }

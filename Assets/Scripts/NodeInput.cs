@@ -2,17 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NodeInput : MonoBehaviour
+public class NodeInput : NodePoint
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public NodeOutput Input;
+    // Start is called before the first frame update
+    public override void OnCircuitChanged()
     {
-        
+
+
+        if (Input == null)
+            value = false;
+
+        base.OnCircuitChanged();
+
+        GetComponentInParent<Node>().OnCircuitChange();
+
     }
 }

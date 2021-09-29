@@ -2,17 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NodeOutput : MonoBehaviour
+public class NodeOutput : NodePoint
 {
+    public List<NodeInput> Outs = new List<NodeInput>();
+    public int id;
     // Start is called before the first frame update
-    void Start()
+    public override void OnCircuitChanged()
     {
-        
-    }
+        base.OnCircuitChanged();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        foreach (var Out in Outs)
+        {
+            if (Out.value == value)
+                continue;
+            Out.value = value;
+
+            Out.OnCircuitChanged();
+        }
     }
 }

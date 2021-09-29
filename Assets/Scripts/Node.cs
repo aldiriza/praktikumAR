@@ -25,7 +25,7 @@ public class Node : MonoBehaviour
         if (OutPoints == null)
             return;
 
-        foreach (var Out in OutPoints)
+        foreach (NodeOutput Out in OutPoints)
         {
             Out.OnCircuitChanged();
         }

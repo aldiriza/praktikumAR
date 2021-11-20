@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 55474570677644614}
   - component: {fileID: 1934109766585926952}
   - component: {fileID: 8157206711151153141}
+  - component: {fileID: 796268188723269889}
   m_Layer: 0
   m_Name: GerbangAND
   m_TagString: Untagged
@@ -225,6 +226,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   instanceId: 0
+--- !u!114 &796268188723269889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2570536077797369423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bd9a9170a3f6b42acd76c3f16e9a93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Gerbang AND
+  longText: "Gerbang logika AND merupakan gerbang logika yang outputnya (Y) hanya
+    akan bernilai benar atau \u201C1\u201D jika semua inputnya (A&B) bernilai benar
+    atau \u201C1\u201D. Komponen elektronika yang menggunakan gerbang logika AND
+    adalah IC 7208."
 --- !u!1 &5131297652386702154
 GameObject:
   m_ObjectHideFlags: 0

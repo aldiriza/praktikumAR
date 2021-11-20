@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AND : Node
 {
+
     public override void OnCircuitChange()
     {
         base.OnCircuitChange();

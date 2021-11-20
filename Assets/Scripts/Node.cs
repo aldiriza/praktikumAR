@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Node : MonoBehaviour
 {
+    
+
     public NodeInput[] InPoints { get; private set; }
 
     public NodeOutput[] OutPoints { get; private set; }

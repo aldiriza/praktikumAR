@@ -13,14 +13,15 @@ public class NodePoint : MonoBehaviour
 
     private Material mat;
 
-    private void Awake()
+    private void Start()
     {
         mat = GetComponent<Renderer>().material;
     }
 
     public virtual void OnCircuitChanged()
     {
-        mat.color = value ? activated : deactivated;
+        Color color = value ? activated : deactivated;
+        mat.color = color;
     }
 
 }

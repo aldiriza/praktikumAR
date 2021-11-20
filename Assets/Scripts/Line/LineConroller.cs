@@ -5,14 +5,10 @@ using UnityEngine;
 public class LineConroller : MonoBehaviour
 {
     private LineRenderer lr;
-    public Transform[] points;
-
-    private void Awake()
-    {
-        lr = GetComponent<LineRenderer>();
-    }
+    [SerializeField] private Transform[] points;
 
     public void SetUpLine(Transform[] points) {
+        lr = GetComponent<LineRenderer>();
         lr.positionCount = points.Length;
         this.points = points;
     }

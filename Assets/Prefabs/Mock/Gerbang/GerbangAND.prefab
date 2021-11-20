@@ -125,10 +125,7 @@ GameObject:
   - component: {fileID: 55474570677644614}
   - component: {fileID: 1934109766585926952}
   - component: {fileID: 8157206711151153141}
-<<<<<<< HEAD
   - component: {fileID: 796268188723269889}
-=======
->>>>>>> main
   m_Layer: 0
   m_Name: GerbangAND
   m_TagString: Untagged
@@ -229,7 +226,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   instanceId: 0
-<<<<<<< HEAD
 --- !u!114 &796268188723269889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -247,8 +243,6 @@ MonoBehaviour:
     akan bernilai benar atau \u201C1\u201D jika semua inputnya (A&B) bernilai benar
     atau \u201C1\u201D. Komponen elektronika yang menggunakan gerbang logika AND
     adalah IC 7208."
-=======
->>>>>>> main
 --- !u!1 &5131297652386702154
 GameObject:
   m_ObjectHideFlags: 0

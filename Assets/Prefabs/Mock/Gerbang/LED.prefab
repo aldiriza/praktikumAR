@@ -125,10 +125,7 @@ GameObject:
   - component: {fileID: 7032171512009990000}
   - component: {fileID: 7032171512009990001}
   - component: {fileID: 7032171512009990006}
-<<<<<<< HEAD
   - component: {fileID: -1027564849939967164}
-=======
->>>>>>> main
   m_Layer: 0
   m_Name: LED
   m_TagString: Untagged
@@ -227,7 +224,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   instanceId: 0
-<<<<<<< HEAD
 --- !u!114 &-1027564849939967164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,8 +240,6 @@ MonoBehaviour:
   longText: LED merupakan kependekan dari Light Emitting Diode, yakni salah satu
     dari banyak jenis perangkat semikonduktor yang mengeluarkan cahaya ketika arus
     listrik melewatinya.
-=======
->>>>>>> main
 --- !u!1 &7032171512120337815
 GameObject:
   m_ObjectHideFlags: 0

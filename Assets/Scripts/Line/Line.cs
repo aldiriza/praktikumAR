@@ -7,6 +7,7 @@ public class Line : MonoBehaviour
     [SerializeField] private Transform[] points;
     [SerializeField] private LineConroller line;
 
+     
 
     private void Start()
     {
@@ -20,4 +21,6 @@ public class Line : MonoBehaviour
     {
         line.SetUpLine(points);
     }
+
+     
 }

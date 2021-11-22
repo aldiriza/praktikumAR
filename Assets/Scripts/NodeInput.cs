@@ -27,6 +27,8 @@ public class NodeInput : NodePoint
         base.OnCircuitChanged();
 
         GetComponentInParent<Node>().OnCircuitChange();
+        
+        
 
     }
 }

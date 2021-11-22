@@ -4,20 +4,22 @@ using UnityEngine;
 
 public class LED : Node
 {
-    protected Color deactivated = Color.black;
-    protected Color activated = Color.red;
+    protected Color deactivated = Color.white;
+    protected Color activated = Color.yellow;
 
     private Material mat;
 
 
     private void Start()
     {
-        mat = GetComponent<Renderer>().material;
+        mat = GetComponent<Renderer>().materials[0];
     }
 
     public override void OnCircuitChange()
     {
         base.OnCircuitChange();
-        mat.color = InPoints[0].value ? activated : deactivated;
+        Color color = InPoints[0].value ? activated : deactivated;
+        mat.SetColor("_EmissionColor", color);
+         
     }
 }

@@ -7,10 +7,19 @@ public class LineConroller : MonoBehaviour
     private LineRenderer lr;
     [SerializeField] private Transform[] points;
 
-    public void SetUpLine(Transform[] points) {
+ 
+
+    private void Awake()
+    {
         lr = GetComponent<LineRenderer>();
+    }
+
+    public void SetUpLine(Transform[] points) {
+        
         lr.positionCount = points.Length;
         this.points = points;
+        
+
     }
 
     private void Update()
@@ -21,4 +30,6 @@ public class LineConroller : MonoBehaviour
         }
 
     }
+
+    
 }

@@ -22,6 +22,11 @@ public class Node : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        //OnCircuitChange();
+    }
+
     public virtual void OnCircuitChange()
     {
         if (OutPoints == null)

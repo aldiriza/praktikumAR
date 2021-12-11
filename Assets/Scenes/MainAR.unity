@@ -308,7 +308,7 @@ MonoBehaviour:
   m_FocusMode: -1
   m_LightEstimationMode: -1
   m_AutoFocus: 1
-  m_LightEstimation: 0
+  m_LightEstimation: -1
   m_FacingDirection: 1
 --- !u!114 &1278705510
 MonoBehaviour:
@@ -455,8 +455,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   placeablePrefabs:
-  - {fileID: 8495494656307716487, guid: 70d957e1ba9ec8b43ab6c358692038ae, type: 3}
-  - {fileID: 4191851158892254409, guid: acb829856dc25414da0728cccf3f6447, type: 3}
+  - {fileID: 5910327695754332507, guid: 0c33edb7cc9bfe946a9b3460d4409b50, type: 3}
+  - {fileID: 879416211609863695, guid: 618e6b08b10210541af0d979af1ea714, type: 3}
 --- !u!114 &2059589014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -471,5 +471,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SerializedLibrary: {fileID: 11400000, guid: 537d73c95a35aca4e989ad0d5fc1cee2,
     type: 2}
-  m_MaxNumberOfMovingImages: 4
+  m_MaxNumberOfMovingImages: 1
   m_TrackedImagePrefab: {fileID: 0}

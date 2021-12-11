@@ -4,7 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainAR.unity
+    guid: 1d2ba4cdd56059b4ba85abd259f97079
+  - enabled: 1
+    path: Assets/Scenes/CaptureGalery.unity
+    guid: 2fae543a31aefcd459b4d0f4066047dd
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 744b813df90924c169af73489b8325de,
       type: 2}

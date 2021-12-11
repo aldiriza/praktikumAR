@@ -18,8 +18,8 @@ public class LineConroller : MonoBehaviour
     public void SetUpLine(Transform[] points) {
         
         lr.positionCount = points.Length;
-        lr.startWidth = .005f;
-        lr.endWidth = .005f;
+        lr.startWidth = .002f;
+        lr.endWidth = .002f;
         this.points = points;
         
 

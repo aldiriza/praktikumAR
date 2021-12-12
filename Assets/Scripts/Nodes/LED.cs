@@ -5,7 +5,7 @@ using UnityEngine;
 public class LED : Node
 {
     protected Color deactivated = Color.white;
-    protected Color activated = Color.yellow;
+    protected Color activated = Color.blue;
 
     private Material mat;
 
@@ -19,7 +19,6 @@ public class LED : Node
     {
         base.OnCircuitChange();
         Color color = InPoints[0].value ? activated : deactivated;
-        mat.SetColor("_EmissionColor", color);
-         
+        mat.color = color;
     }
 }

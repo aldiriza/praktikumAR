@@ -19,19 +19,119 @@ MonoBehaviour:
       m_GuidLow: 4687648186229901160
       m_GuidHigh: 3855016209837736332
     m_SerializedTextureGuid:
-      m_GuidLow: 17893982550854283676
-      m_GuidHigh: 8587049225961043019
+      m_GuidLow: 2721307710547741399
+      m_GuidHigh: 10071603699100116554
     m_Size: {x: 0.05, y: 0.05}
     m_SpecifySize: 1
-    m_Name: Rangkaian NAND 4 Masukkan
+    m_Name: AND
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
       m_GuidLow: 5463630055593678762
       m_GuidHigh: 12388332834162314421
     m_SerializedTextureGuid:
-      m_GuidLow: 8621074066276386258
-      m_GuidHigh: 7488148898908238938
-    m_Size: {x: 0.05, y: 0.041166667}
+      m_GuidLow: 15966539614336139967
+      m_GuidHigh: 14435581986329250297
+    m_Size: {x: 0.05, y: 0.05}
     m_SpecifySize: 1
-    m_Name: Rangkaian OR
+    m_Name: OR
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5156272119986784445
+      m_GuidHigh: 1435156604585825424
+    m_SerializedTextureGuid:
+      m_GuidLow: 17209499345596904190
+      m_GuidHigh: 10442744227875549625
+    m_Size: {x: 0.05, y: 0.05}
+    m_SpecifySize: 1
+    m_Name: NAND
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5531602583763058587
+      m_GuidHigh: 4481246985671824290
+    m_SerializedTextureGuid:
+      m_GuidLow: 2689815695477187693
+      m_GuidHigh: 873581861839161976
+    m_Size: {x: 0.05, y: 0.05}
+    m_SpecifySize: 1
+    m_Name: NOR
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5142937078746021450
+      m_GuidHigh: 9179722871734111623
+    m_SerializedTextureGuid:
+      m_GuidLow: 4522907062607849275
+      m_GuidHigh: 7039649063597389624
+    m_Size: {x: 0.05, y: 0.05}
+    m_SpecifySize: 1
+    m_Name: XOR
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5418098528262558574
+      m_GuidHigh: 6128556217749016454
+    m_SerializedTextureGuid:
+      m_GuidLow: 8125800495826989831
+      m_GuidHigh: 1239888129240249880
+    m_Size: {x: 0.05, y: 0.05}
+    m_SpecifySize: 1
+    m_Name: XNOR
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5611177866227574293
+      m_GuidHigh: 14548741059281755780
+    m_SerializedTextureGuid:
+      m_GuidLow: 18402952784630254223
+      m_GuidHigh: 272825838442289994
+    m_Size: {x: 0.05, y: 0.050024416}
+    m_SpecifySize: 1
+    m_Name: NAND4
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5604680919402094977
+      m_GuidHigh: 8517875621193505431
+    m_SerializedTextureGuid:
+      m_GuidLow: 12043908388914308393
+      m_GuidHigh: 12993044862063872779
+    m_Size: {x: 0.05, y: 0.050024416}
+    m_SpecifySize: 1
+    m_Name: AND4
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4938893597190143203
+      m_GuidHigh: 2452818669734728107
+    m_SerializedTextureGuid:
+      m_GuidLow: 5581278258997224253
+      m_GuidHigh: 1608969548177200649
+    m_Size: {x: 0.05, y: 0.050024416}
+    m_SpecifySize: 1
+    m_Name: ASOSIATIF_A
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4842525282930531226
+      m_GuidHigh: 13576154345907839619
+    m_SerializedTextureGuid:
+      m_GuidLow: 11926886772328208297
+      m_GuidHigh: 14546836959823635994
+    m_Size: {x: 0.05, y: 0.050024416}
+    m_SpecifySize: 1
+    m_Name: ASOSIATIF_B
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4803550407975618312
+      m_GuidHigh: 13727170095143200932
+    m_SerializedTextureGuid:
+      m_GuidLow: 13647279990152001735
+      m_GuidHigh: 10106424050918205307
+    m_Size: {x: 0.05, y: 0.050024416}
+    m_SpecifySize: 1
+    m_Name: IDEMPOTEN_A
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4802849362609877999
+      m_GuidHigh: 4343870785685508519
+    m_SerializedTextureGuid:
+      m_GuidLow: 2279998798073484979
+      m_GuidHigh: 4707533423132483450
+    m_Size: {x: 0.05, y: 0.050024416}
+    m_SpecifySize: 1
+    m_Name: IDEMPOTEN_B
     m_Texture: {fileID: 0}

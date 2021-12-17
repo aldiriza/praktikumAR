@@ -190,6 +190,7 @@ GameObject:
   - component: {fileID: 5213242042466730561}
   - component: {fileID: 5752101098541821689}
   - component: {fileID: 8661402615887503743}
+  - component: {fileID: 5064321549433475088}
   m_Layer: 0
   m_Name: and_gate
   m_TagString: Untagged
@@ -241,7 +242,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   title: AND
-  longText: AND adalah
+  longText: Gerbang AND hanya akan memiliki Output 1 apabila semua masukkan bernilai
+    1.
+--- !u!65 &5064321549433475088
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4833198754316998907}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2, y: 0.1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5492926184083513725
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,6 +8,7 @@ public class NodeInput : NodePoint
     public NodeOutput Input;
 
 
+
     private void Awake()
     {
         var kbl = Instantiate(kabel, new Vector3(0, 0, 0), Quaternion.identity);
@@ -27,6 +28,7 @@ public class NodeInput : NodePoint
         base.OnCircuitChanged();
 
         GetComponentInParent<Node>().OnCircuitChange();
+        GetComponentInChildren<LineConroller>().ChangeLineColor(value);
         
         
 

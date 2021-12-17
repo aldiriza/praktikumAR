@@ -468,6 +468,7 @@ GameObject:
   - component: {fileID: 9072271768824661167}
   - component: {fileID: 8821872609997761029}
   - component: {fileID: 8821872609997761030}
+  - component: {fileID: 4926786335489069705}
   m_Layer: 0
   m_Name: nor_gate
   m_TagString: Untagged
@@ -506,8 +507,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43bd9a9170a3f6b42acd76c3f16e9a93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: 
-  longText: 
+  title: NOR
+  longText: Kebalikan dari OR, dimana output hanya akan bernilai 1 jika kedua masukkan
+    bernilai 0, selain dari itu keluaran akan bernilai 0.
 --- !u!114 &8821872609997761030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -521,3 +523,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   instanceId: 0
+--- !u!65 &4926786335489069705
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8551490957339074069}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2, y: 0.1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}

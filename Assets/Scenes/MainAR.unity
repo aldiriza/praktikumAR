@@ -674,9 +674,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 683e90f239f8a2b42b3533e9316fd5f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  execute: 3
-  target: {fileID: 0}
-  seconds: -1
 --- !u!114 &391381033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -689,19 +686,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fc98219a83dff145947365dc914d06e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tapThreshold: 0.2
-  swipeThreshold: 100
-  referenceDpi: 200
-  guiLayers:
-    serializedVersion: 2
-    m_Bits: 32
-  useTouch: 1
-  useHover: 1
-  useMouse: 1
-  useSimulator: 1
-  recordFingers: 1
-  recordThreshold: 5
-  recordLimit: 10
 --- !u!4 &391381034
 Transform:
   m_ObjectHideFlags: 0
@@ -1840,6 +1824,7 @@ GameObject:
   - component: {fileID: 1278705510}
   - component: {fileID: 1278705509}
   - component: {fileID: 1278705508}
+  - component: {fileID: 1278705512}
   m_Layer: 0
   m_Name: AR Camera
   m_TagString: Untagged
@@ -1947,6 +1932,22 @@ Transform:
   m_Father: {fileID: 2059589012}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1278705512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278705506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c49b4cc203aa6414fae5c798d1d0e7d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_MaxRayIntersections: 0
 --- !u!1 &1306048006
 GameObject:
   m_ObjectHideFlags: 0

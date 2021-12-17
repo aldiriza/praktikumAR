@@ -22,5 +22,7 @@ public class Line : MonoBehaviour
         line.SetUpLine(points);
     }
 
+   
+
      
 }

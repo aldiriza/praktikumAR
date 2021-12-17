@@ -6,7 +6,7 @@ public class NodePoint : MonoBehaviour
 {
     public bool value;
     protected Color deactivated = Color.black;
-    protected Color activated = Color.red;
+    protected Color activated = Color.blue;
 
     [HideInInspector]
     public Node node;

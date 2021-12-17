@@ -5,7 +5,7 @@ using UnityEngine;
 public class Toggle : Node
 {
     protected Color deactivated;
-    protected Color activated = Color.red;
+    protected Color activated = Color.blue;
     private Material mat;
 
 

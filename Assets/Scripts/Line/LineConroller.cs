@@ -8,7 +8,9 @@ public class LineConroller : MonoBehaviour
     private LineRenderer lr;
     [SerializeField] private Transform[] points;
 
- 
+    protected Color deactivated = Color.white;
+    protected Color activated = Color.blue;
+
 
     private void Awake()
     {
@@ -34,5 +36,13 @@ public class LineConroller : MonoBehaviour
 
     }
 
-    
+    public virtual void ChangeLineColor(bool value)
+    {
+        Color color = value ? activated : deactivated;
+        //lr.SetColors(color, color);
+        lr.startColor = color;
+        lr.endColor = color;
+    }
+
+
 }

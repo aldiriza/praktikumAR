@@ -19,8 +19,8 @@ MonoBehaviour:
       m_GuidLow: 4687648186229901160
       m_GuidHigh: 3855016209837736332
     m_SerializedTextureGuid:
-      m_GuidLow: 2721307710547741399
-      m_GuidHigh: 10071603699100116554
+      m_GuidLow: 3860911696627941471
+      m_GuidHigh: 16149462836939627336
     m_Size: {x: 0.05, y: 0.05}
     m_SpecifySize: 1
     m_Name: AND
@@ -29,8 +29,8 @@ MonoBehaviour:
       m_GuidLow: 5463630055593678762
       m_GuidHigh: 12388332834162314421
     m_SerializedTextureGuid:
-      m_GuidLow: 15966539614336139967
-      m_GuidHigh: 14435581986329250297
+      m_GuidLow: 3306990865856195549
+      m_GuidHigh: 14815202968640991929
     m_Size: {x: 0.05, y: 0.05}
     m_SpecifySize: 1
     m_Name: OR
@@ -39,8 +39,8 @@ MonoBehaviour:
       m_GuidLow: 5156272119986784445
       m_GuidHigh: 1435156604585825424
     m_SerializedTextureGuid:
-      m_GuidLow: 17209499345596904190
-      m_GuidHigh: 10442744227875549625
+      m_GuidLow: 15331494646310353224
+      m_GuidHigh: 12234841042515188552
     m_Size: {x: 0.05, y: 0.05}
     m_SpecifySize: 1
     m_Name: NAND
@@ -49,8 +49,8 @@ MonoBehaviour:
       m_GuidLow: 5531602583763058587
       m_GuidHigh: 4481246985671824290
     m_SerializedTextureGuid:
-      m_GuidLow: 2689815695477187693
-      m_GuidHigh: 873581861839161976
+      m_GuidLow: 4297713936566589934
+      m_GuidHigh: 5711866837535733241
     m_Size: {x: 0.05, y: 0.05}
     m_SpecifySize: 1
     m_Name: NOR
@@ -59,8 +59,8 @@ MonoBehaviour:
       m_GuidLow: 5142937078746021450
       m_GuidHigh: 9179722871734111623
     m_SerializedTextureGuid:
-      m_GuidLow: 4522907062607849275
-      m_GuidHigh: 7039649063597389624
+      m_GuidLow: 6144071608264593584
+      m_GuidHigh: 7849419051019911754
     m_Size: {x: 0.05, y: 0.05}
     m_SpecifySize: 1
     m_Name: XOR
@@ -69,8 +69,8 @@ MonoBehaviour:
       m_GuidLow: 5418098528262558574
       m_GuidHigh: 6128556217749016454
     m_SerializedTextureGuid:
-      m_GuidLow: 8125800495826989831
-      m_GuidHigh: 1239888129240249880
+      m_GuidLow: 8517599479563368590
+      m_GuidHigh: 2902238297251656728
     m_Size: {x: 0.05, y: 0.05}
     m_SpecifySize: 1
     m_Name: XNOR
@@ -79,8 +79,8 @@ MonoBehaviour:
       m_GuidLow: 5611177866227574293
       m_GuidHigh: 14548741059281755780
     m_SerializedTextureGuid:
-      m_GuidLow: 18402952784630254223
-      m_GuidHigh: 272825838442289994
+      m_GuidLow: 13849888429633833027
+      m_GuidHigh: 11301641796492939144
     m_Size: {x: 0.05, y: 0.050024416}
     m_SpecifySize: 1
     m_Name: NAND4
@@ -89,8 +89,8 @@ MonoBehaviour:
       m_GuidLow: 5604680919402094977
       m_GuidHigh: 8517875621193505431
     m_SerializedTextureGuid:
-      m_GuidLow: 12043908388914308393
-      m_GuidHigh: 12993044862063872779
+      m_GuidLow: 10872961513519162628
+      m_GuidHigh: 11097724521245491227
     m_Size: {x: 0.05, y: 0.050024416}
     m_SpecifySize: 1
     m_Name: AND4
@@ -99,8 +99,8 @@ MonoBehaviour:
       m_GuidLow: 4938893597190143203
       m_GuidHigh: 2452818669734728107
     m_SerializedTextureGuid:
-      m_GuidLow: 5581278258997224253
-      m_GuidHigh: 1608969548177200649
+      m_GuidLow: 11057522564996416740
+      m_GuidHigh: 9447164727155331913
     m_Size: {x: 0.05, y: 0.050024416}
     m_SpecifySize: 1
     m_Name: ASOSIATIF_A
@@ -109,8 +109,8 @@ MonoBehaviour:
       m_GuidLow: 4842525282930531226
       m_GuidHigh: 13576154345907839619
     m_SerializedTextureGuid:
-      m_GuidLow: 11926886772328208297
-      m_GuidHigh: 14546836959823635994
+      m_GuidLow: 17979538932944713204
+      m_GuidHigh: 16892918613653878074
     m_Size: {x: 0.05, y: 0.050024416}
     m_SpecifySize: 1
     m_Name: ASOSIATIF_B
@@ -119,8 +119,8 @@ MonoBehaviour:
       m_GuidLow: 4803550407975618312
       m_GuidHigh: 13727170095143200932
     m_SerializedTextureGuid:
-      m_GuidLow: 13647279990152001735
-      m_GuidHigh: 10106424050918205307
+      m_GuidLow: 18056151055690640380
+      m_GuidHigh: 16801262047789679771
     m_Size: {x: 0.05, y: 0.050024416}
     m_SpecifySize: 1
     m_Name: IDEMPOTEN_A
@@ -129,8 +129,8 @@ MonoBehaviour:
       m_GuidLow: 4802849362609877999
       m_GuidHigh: 4343870785685508519
     m_SerializedTextureGuid:
-      m_GuidLow: 2279998798073484979
-      m_GuidHigh: 4707533423132483450
+      m_GuidLow: 10249760565623595
+      m_GuidHigh: 11289182332936710632
     m_Size: {x: 0.05, y: 0.050024416}
     m_SpecifySize: 1
     m_Name: IDEMPOTEN_B

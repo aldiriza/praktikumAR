@@ -24,7 +24,7 @@ public class Node : MonoBehaviour
 
     private void Start()
     {
-        //OnCircuitChange();
+        OnCircuitChange(); //akan error tapi gamasalah
     }
 
     public virtual void OnCircuitChange()

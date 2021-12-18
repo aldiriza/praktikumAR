@@ -18,7 +18,7 @@ public class NodePoint : MonoBehaviour
     private void Start()
     {
         mat = GetComponent<Renderer>().material;
-        //OnCircuitChanged();
+        OnCircuitChanged(); //akan error tapi gapapa
     }
 
     public virtual void OnCircuitChanged()

@@ -1,92 +1,126 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
+using UnityEngine.XR.ARSubsystems;
+using UnityEngine.SceneManagement;
 
+[RequireComponent(typeof(ARTrackedImageManager))]
 public class TrackedImageMultipleManager : MonoBehaviour
 {
     [SerializeField]
     private Text imageTrackedText;
 
+    [Header("The length of this list must match the number of images in Reference Image Library")]
     [SerializeField]
-    private GameObject[] placeablePrefabs;
+    private List<GameObject> ObjectsToPlace;
 
     [SerializeField]
-    private Vector3 scaleFactor = new Vector3(0.1f, 0.1f, 0.1f);
+    private Vector3 scaleFactor = new Vector3(0.01f, 0.01f, 0.01f);
 
-    private ARTrackedImageManager m_TrackedImageManager;
+    private int refImageCount;
+    private Dictionary<string, GameObject> allObjects;
 
-    private Dictionary<string, GameObject> spawnedPrefabs = new Dictionary<string, GameObject>();
+    //create the “trackable” manager to detect 2D images
+    private ARTrackedImageManager arTrackedImageManager;
+    private IReferenceImageLibrary refLibrary;
 
     void Awake()
     {
-        m_TrackedImageManager = GetComponent<ARTrackedImageManager>();
-
-        // setup all game objects in dictionary
-        foreach (GameObject arObject in placeablePrefabs)
-        {
-            GameObject newARObject = Instantiate(arObject, Vector3.zero, Quaternion.identity);
-            newARObject.name = arObject.name;
-            spawnedPrefabs.Add(arObject.name, newARObject);
-        }
+        //initialized tracked image manager  
+        arTrackedImageManager = GetComponent<ARTrackedImageManager>();
     }
 
-    void OnEnable()
+
+    //when the tracked image manager is enabled add binding to the tracked 
+    //image changed event handler by calling a method to iterate through 
+    //image reference’s changes 
+    private void OnEnable()
     {
-        m_TrackedImageManager.trackedImagesChanged += OnTrackedImagesChanged;
+        arTrackedImageManager.trackedImagesChanged += OnImageChanged;
     }
 
-    void OnDisable()
+    //when the tracked image manager is disabled remove binding to the 
+    //tracked image changed event handler by calling a method to iterate 
+    //through image reference’s changes
+    private void OnDisable()
     {
-        m_TrackedImageManager.trackedImagesChanged -= OnTrackedImagesChanged;
+        arTrackedImageManager.trackedImagesChanged -= OnImageChanged;
     }
 
-    void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs eventArgs)
+    private void Start()
     {
-        foreach (ARTrackedImage trackedImage in eventArgs.added)
-        {
-            UpdateARImage(trackedImage);
-        }
-
-        foreach (ARTrackedImage trackedImage in eventArgs.updated)
-        {
-            UpdateARImage(trackedImage);
-        }
-
-        foreach (ARTrackedImage trackedImage in eventArgs.removed)
-        {
-            spawnedPrefabs[trackedImage.name].SetActive(false);
-        }
+        refLibrary = arTrackedImageManager.referenceLibrary;
+        refImageCount = refLibrary.count;
+        LoadObjectDictionary();
     }
 
-    private void UpdateARImage(ARTrackedImage trackedImage)
+    void LoadObjectDictionary()
     {
-        // Display the name of the tracked image in the canvas
-        imageTrackedText.text = trackedImage.referenceImage.name;
-
-        // Assign and Place Game Object
-        AssignGameObject(trackedImage.referenceImage.name, trackedImage.transform.position);
-
-        Debug.Log($"trackedImage.referenceImage.name: {trackedImage.referenceImage.name}");
-    }
-
-    void AssignGameObject(string name, Vector3 newPosition)
-    {
-        if (placeablePrefabs != null)
+        allObjects = new Dictionary<string, GameObject>();
+        for (int i = 0; i < refImageCount; i++)
         {
-            GameObject goARObject = spawnedPrefabs[name];
-            goARObject.SetActive(true);
-            goARObject.transform.position = newPosition;
-            goARObject.transform.localScale = scaleFactor;
-            foreach (GameObject go in spawnedPrefabs.Values)
+            GameObject newOverlay = new GameObject();
+            newOverlay = ObjectsToPlace[i];
+            //check if the object is prefab and need to be instantiated
+            if (ObjectsToPlace[i].gameObject.scene.rootCount == 0)
             {
-                Debug.Log($"Go in arObjects.Values: {go.name}");
-                if (go.name != name)
-                {
-                    go.SetActive(false);
-                }
+                newOverlay = (GameObject)Instantiate(ObjectsToPlace[i], transform.localPosition, Quaternion.identity);
             }
+
+            allObjects.Add(refLibrary[i].name, newOverlay);
+            newOverlay.SetActive(false);
+        }
+    }
+
+
+    void ActivateTrackedObject(string imageName)
+    {
+        imageTrackedText.text = imageName;
+        allObjects[imageName].SetActive(true);
+        // Give the initial image a reasonable default scale
+        allObjects[imageName].transform.localScale = scaleFactor;
+    }
+
+    private void UpdateTrackedObject(ARTrackedImage trackedImage)
+    {
+        //if tracked image tracking state is comparable to tracking
+        if (trackedImage.trackingState == TrackingState.Tracking)
+        {
+            //set the image tracked ar object to active 
+            allObjects[trackedImage.referenceImage.name].SetActive(true);
+            allObjects[trackedImage.referenceImage.name].transform.position = trackedImage.transform.position;
+            allObjects[trackedImage.referenceImage.name].transform.rotation = trackedImage.transform.rotation;
+        }
+        else //if tracked image tracking state is limited or none 
+        {
+            //deactivate the image tracked ar object 
+            allObjects[trackedImage.referenceImage.name].SetActive(false);
+        }
+    }
+
+    public void OnImageChanged(ARTrackedImagesChangedEventArgs args)
+    {
+        // for each tracked image that has been added
+        foreach (var addedImage in args.added)
+        {
+            ActivateTrackedObject(addedImage.referenceImage.name);
+
+        }
+
+        // for each tracked image that has been updated
+        foreach (var updated in args.updated)
+        {
+            //throw tracked image to check tracking state
+            UpdateTrackedObject(updated);
+        }
+
+        // for each tracked image that has been removed  
+        foreach (var trackedImage in args.removed)
+        {
+            // destroy the AR object associated with the tracked image
+            Destroy(trackedImage.gameObject);
         }
     }
 }

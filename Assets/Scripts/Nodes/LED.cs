@@ -6,13 +6,17 @@ public class LED : Node
 {
     protected Color deactivated = Color.white;
     protected Color activated = Color.blue;
+    public bool value;
 
     private Material mat;
 
 
     private void Start()
     {
+        
         mat = GetComponent<Renderer>().materials[0];
+        Color color = value ? activated : deactivated;
+        mat.color = color;
     }
 
     public override void OnCircuitChange()

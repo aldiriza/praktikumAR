@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
 using UnityEngine.XR.ARFoundation;
+using UnityEngine.XR.ARSubsystems;
 
 [RequireComponent(typeof(ARTrackedImageManager))]
 public class ImageTrack : MonoBehaviour
 {
+
     [SerializeField]
     private GameObject[] placeablePrefabs;
 
@@ -39,7 +41,55 @@ public class ImageTrack : MonoBehaviour
     {
         foreach (ARTrackedImage trackedImage in eventArgs.added)
         {
-            UpdateImage(trackedImage);
+            GameObject parent = trackedImage.transform.GetChild(0).gameObject;
+            if(trackedImage.trackingState != TrackingState.None)
+            {
+                parent.SetActive(true);
+
+                switch (trackedImage.referenceImage.name)
+                {
+                    case "AND":
+                        parent.transform.GetChild(0).gameObject.SetActive(true);
+                        break;
+                    case "OR":
+                        parent.transform.GetChild(1).gameObject.SetActive(true);
+                        break;
+                    case "NAND":
+                        parent.transform.GetChild(2).gameObject.SetActive(true);
+                        break;
+                    case "NOR":
+                        parent.transform.GetChild(3).gameObject.SetActive(true);
+                        break;
+                    case "XOR":
+                        parent.transform.GetChild(4).gameObject.SetActive(true);
+                        break;
+                    case "XNOR":
+                        parent.transform.GetChild(5).gameObject.SetActive(true);
+                        break;
+                    case "NAND4":
+                        parent.transform.GetChild(6).gameObject.SetActive(true);
+                        break;
+                    case "AND4":
+                        parent.transform.GetChild(7).gameObject.SetActive(true);
+                        break;
+                    case "ASOSIATIF_A":
+                        parent.transform.GetChild(8).gameObject.SetActive(true);
+                        break;
+                    case "ASOSIATIF_B":
+                        parent.transform.GetChild(9).gameObject.SetActive(true);
+                        break;
+                    case "IDEMPOTEN_A":
+                        parent.transform.GetChild(10).gameObject.SetActive(true);
+                        break;
+                    case "IDEMPOTEN_B":
+                        parent.transform.GetChild(11).gameObject.SetActive(true);
+                        break;
+                }
+            }
+            else
+            {
+                parent.SetActive(false);
+            }
         }
 
         foreach (ARTrackedImage trackedImage in eventArgs.updated)

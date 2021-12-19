@@ -2525,6 +2525,7 @@ MonoBehaviour:
   - {fileID: 6769352593472224168, guid: 3293ecf5eada5834e8d14c35ea16bdf0, type: 3}
   - {fileID: 5516817541198862616, guid: b39050af877f6d1458ed99554ef785da, type: 3}
   scaleFactor: {x: 0.01, y: 0.01, z: 0.01}
+  lockManager: {fileID: 1679208393}
 --- !u!114 &2059589014
 MonoBehaviour:
   m_ObjectHideFlags: 0

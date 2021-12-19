@@ -19,6 +19,9 @@ public class TrackedImageMultipleManager : MonoBehaviour
     [SerializeField]
     private Vector3 scaleFactor = new Vector3(0.01f, 0.01f, 0.01f);
 
+    [SerializeField]
+    private LockScript lockManager;
+
     private int refImageCount;
     private Dictionary<string, GameObject> allObjects;
 
@@ -81,6 +84,7 @@ public class TrackedImageMultipleManager : MonoBehaviour
         allObjects[imageName].SetActive(true);
         // Give the initial image a reasonable default scale
         allObjects[imageName].transform.localScale = scaleFactor;
+        lockManager.activeObject = allObjects[imageName]; //buat naro objek ke script lockManager, ngga tau bisa atau engga.
     }
 
     private void UpdateTrackedObject(ARTrackedImage trackedImage)
@@ -92,6 +96,8 @@ public class TrackedImageMultipleManager : MonoBehaviour
             allObjects[trackedImage.referenceImage.name].SetActive(true);
             allObjects[trackedImage.referenceImage.name].transform.position = trackedImage.transform.position;
             allObjects[trackedImage.referenceImage.name].transform.rotation = trackedImage.transform.rotation;
+
+            lockManager.activeObject = allObjects[trackedImage.referenceImage.name]; 
         }
         else //if tracked image tracking state is limited or none 
         {

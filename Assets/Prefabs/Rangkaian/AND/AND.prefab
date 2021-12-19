@@ -316,6 +316,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8222729250492455406, guid: 5297a43ba19d69a469c84a0a2807e2c0,
+        type: 3}
+      propertyPath: title
+      value: Rangkaian AND
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222729250492455406, guid: 5297a43ba19d69a469c84a0a2807e2c0,
+        type: 3}
+      propertyPath: longText
+      value: Rangkaian AND menggunakan gerbang AND, dimana hanya akan memiliki Output
+        1 apabila semua masukkan bernilai 1.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5297a43ba19d69a469c84a0a2807e2c0, type: 3}
 --- !u!4 &6001337075569458033 stripped

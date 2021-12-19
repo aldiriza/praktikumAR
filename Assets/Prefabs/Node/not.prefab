@@ -111,6 +111,7 @@ GameObject:
   - component: {fileID: 9185212683999618950}
   - component: {fileID: 9185212683999618945}
   - component: {fileID: 3512810403180730169}
+  - component: {fileID: 4849968598546187128}
   m_Layer: 0
   m_Name: not
   m_TagString: Untagged
@@ -210,6 +211,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.2, y: 0.1, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4849968598546187128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9185212683999618944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43bd9a9170a3f6b42acd76c3f16e9a93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: NOT
+  longText: Gerbang NOT berfungsi untuk membalikkan nilai Input, apabila Input bernilai
+    1 maka output akan bernilai 0, begitu juga sebaliknya.
 --- !u!1 &9185212684391724695
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5910327695754332506}
+  - component: {fileID: -7051077059523294232}
+  - component: {fileID: 8864116561580921042}
   m_Layer: 0
   m_Name: NAND4
   m_TagString: Untagged
@@ -39,6 +41,52 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-7051077059523294232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5910327695754332507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c73c1ab94e28d244827af556dca1ed2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Use:
+    Filter: 0
+    IgnoreStartedOverGui: 1
+    RequiredFingerCount: 0
+    RequiredMouseButtons: 0
+    RequiredSelectable: {fileID: 0}
+  _camera: {fileID: 0}
+  relative: 0
+  sensitivity: 1
+  damping: -1
+  remainingScale: {x: 0, y: 0, z: 0}
+--- !u!114 &8864116561580921042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5910327695754332507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52d72cc6210cb7144a24acb7402222a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Use:
+    Filter: 0
+    IgnoreStartedOverGui: 1
+    RequiredFingerCount: 0
+    RequiredMouseButtons: 0
+    RequiredSelectable: {fileID: 0}
+  _camera: {fileID: 0}
+  relative: 0
+  damping: -1
+  remainingTranslation: {x: 0, y: 0, z: 0}
+  remainingRotation: {x: 0, y: 0, z: 0, w: 1}
 --- !u!1001 &4036131378047305240
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -282,6 +330,13 @@ PrefabInstance:
         type: 3}
       propertyPath: value
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222729250492455406, guid: 5297a43ba19d69a469c84a0a2807e2c0,
+        type: 3}
+      propertyPath: longText
+      value: Implementasi rangkaian NAND dengan 4 masukkan. Hal dapat dicapai dengan
+        menggunakan kombinasi gerbang AND dan NOT tambahan. Lampu akan mati hanya
+        ketika semua masukkan bernilai 1.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5297a43ba19d69a469c84a0a2807e2c0, type: 3}
@@ -584,18 +639,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bde308ee6cbea954284af02976c60d6d, type: 3}
---- !u!114 &2149944082348044127 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5752101098517263258, guid: bde308ee6cbea954284af02976c60d6d,
-    type: 3}
-  m_PrefabInstance: {fileID: 5910327695862897861}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7871f38b7a1058a4da9b502752e9edcd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2149944083730838738 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5752101099967686679, guid: bde308ee6cbea954284af02976c60d6d,
@@ -614,6 +657,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5910327695862897861}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2149944082348044127 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5752101098517263258, guid: bde308ee6cbea954284af02976c60d6d,
+    type: 3}
+  m_PrefabInstance: {fileID: 5910327695862897861}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7871f38b7a1058a4da9b502752e9edcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2149944082578895982 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5752101098816989355, guid: bde308ee6cbea954284af02976c60d6d,
@@ -1344,6 +1399,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bde308ee6cbea954284af02976c60d6d, type: 3}
+--- !u!4 &1899564381694907344 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5213242042466730561, guid: bde308ee6cbea954284af02976c60d6d,
+    type: 3}
+  m_PrefabInstance: {fileID: 5910327696964211089}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2149944083645905210 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5752101098816989355, guid: bde308ee6cbea954284af02976c60d6d,
+    type: 3}
+  m_PrefabInstance: {fileID: 5910327696964211089}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dbd3300aa1792d43b67f835876611b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2149944082628180358 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5752101099967686679, guid: bde308ee6cbea954284af02976c60d6d,
@@ -1356,12 +1429,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7871f38b7a1058a4da9b502752e9edcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &1899564381694907344 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5213242042466730561, guid: bde308ee6cbea954284af02976c60d6d,
-    type: 3}
-  m_PrefabInstance: {fileID: 5910327696964211089}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2149944083415900683 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5752101098517263258, guid: bde308ee6cbea954284af02976c60d6d,
@@ -1372,17 +1439,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7871f38b7a1058a4da9b502752e9edcd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2149944083645905210 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5752101098816989355, guid: bde308ee6cbea954284af02976c60d6d,
-    type: 3}
-  m_PrefabInstance: {fileID: 5910327696964211089}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5dbd3300aa1792d43b67f835876611b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

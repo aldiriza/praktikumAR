@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8482136111343607684}
+  - component: {fileID: 2746515017306931867}
+  - component: {fileID: 4660597534836906301}
   m_Layer: 0
   m_Name: ASOSIATIF_A
   m_TagString: Untagged
@@ -36,6 +38,52 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &2746515017306931867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8482136111343607685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52d72cc6210cb7144a24acb7402222a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Use:
+    Filter: 0
+    IgnoreStartedOverGui: 1
+    RequiredFingerCount: 0
+    RequiredMouseButtons: 0
+    RequiredSelectable: {fileID: 0}
+  _camera: {fileID: 0}
+  relative: 0
+  damping: -1
+  remainingTranslation: {x: 0, y: 0, z: 0}
+  remainingRotation: {x: 0, y: 0, z: 0, w: 1}
+--- !u!114 &4660597534836906301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8482136111343607685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c73c1ab94e28d244827af556dca1ed2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Use:
+    Filter: 0
+    IgnoreStartedOverGui: 1
+    RequiredFingerCount: 0
+    RequiredMouseButtons: 0
+    RequiredSelectable: {fileID: 0}
+  _camera: {fileID: 0}
+  relative: 0
+  sensitivity: 1
+  damping: -1
+  remainingScale: {x: 0, y: 0, z: 0}
 --- !u!1001 &2283345323485057222
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -410,7 +458,7 @@ PrefabInstance:
     - target: {fileID: 5213242042466730561, guid: bde308ee6cbea954284af02976c60d6d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1
+      value: 0.34
       objectReference: {fileID: 0}
     - target: {fileID: 5213242042466730561, guid: bde308ee6cbea954284af02976c60d6d,
         type: 3}
@@ -420,7 +468,7 @@ PrefabInstance:
     - target: {fileID: 5213242042466730561, guid: bde308ee6cbea954284af02976c60d6d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.211
       objectReference: {fileID: 0}
     - target: {fileID: 5213242042466730561, guid: bde308ee6cbea954284af02976c60d6d,
         type: 3}
@@ -561,7 +609,7 @@ PrefabInstance:
     - target: {fileID: 5316028352362972222, guid: 5297a43ba19d69a469c84a0a2807e2c0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1
+      value: 0.78
       objectReference: {fileID: 0}
     - target: {fileID: 5316028352362972222, guid: 5297a43ba19d69a469c84a0a2807e2c0,
         type: 3}
@@ -597,6 +645,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222729250492455406, guid: 5297a43ba19d69a469c84a0a2807e2c0,
+        type: 3}
+      propertyPath: title
+      value: Hukum Asosiatif
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222729250492455406, guid: 5297a43ba19d69a469c84a0a2807e2c0,
+        type: 3}
+      propertyPath: longText
+      value: Hukum Asosiatif menyatakan bahwa urutan operasi logika tidak akan berpengaruh
+        terhadap Output Rangkaian Logika.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5297a43ba19d69a469c84a0a2807e2c0, type: 3}
@@ -830,12 +889,12 @@ PrefabInstance:
     - target: {fileID: 5213242042466730561, guid: bde308ee6cbea954284af02976c60d6d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5213242042466730561, guid: bde308ee6cbea954284af02976c60d6d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1
+      value: 0.78
       objectReference: {fileID: 0}
     - target: {fileID: 5213242042466730561, guid: bde308ee6cbea954284af02976c60d6d,
         type: 3}

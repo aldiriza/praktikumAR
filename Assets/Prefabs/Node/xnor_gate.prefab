@@ -52,7 +52,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   title: XNOR
-  longText: XNOR adalah
+  longText: Adalah gebalikan dari gerbang XOR, gerbang ini akan memberikan Output
+    true (1) apabila jumlah masukkan bernilai genap, jika jumlah nilai Input ganjil
+    maka Output akan bernilai false (0).
 --- !u!114 &-3778322333131754231
 MonoBehaviour:
   m_ObjectHideFlags: 0

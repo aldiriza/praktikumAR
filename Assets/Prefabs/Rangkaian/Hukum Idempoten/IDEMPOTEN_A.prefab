@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6769352593472224169}
+  - component: {fileID: -7417637569750793824}
+  - component: {fileID: -496596065950393537}
   m_Layer: 0
   m_Name: IDEMPOTEN_A
   m_TagString: Untagged
@@ -33,6 +35,52 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &-7417637569750793824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6769352593472224168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c73c1ab94e28d244827af556dca1ed2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Use:
+    Filter: 0
+    IgnoreStartedOverGui: 1
+    RequiredFingerCount: 0
+    RequiredMouseButtons: 0
+    RequiredSelectable: {fileID: 0}
+  _camera: {fileID: 0}
+  relative: 0
+  sensitivity: 1
+  damping: -1
+  remainingScale: {x: 0, y: 0, z: 0}
+--- !u!114 &-496596065950393537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6769352593472224168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52d72cc6210cb7144a24acb7402222a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Use:
+    Filter: 0
+    IgnoreStartedOverGui: 1
+    RequiredFingerCount: 0
+    RequiredMouseButtons: 0
+    RequiredSelectable: {fileID: 0}
+  _camera: {fileID: 0}
+  relative: 0
+  damping: -1
+  remainingTranslation: {x: 0, y: 0, z: 0}
+  remainingRotation: {x: 0, y: 0, z: 0, w: 1}
 --- !u!1001 &6769352592260748397
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -386,37 +434,37 @@ PrefabInstance:
     - target: {fileID: 5316028352362972222, guid: 5297a43ba19d69a469c84a0a2807e2c0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.000000029802322
       objectReference: {fileID: 0}
     - target: {fileID: 5316028352362972222, guid: 5297a43ba19d69a469c84a0a2807e2c0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.3
+      value: -1.05
       objectReference: {fileID: 0}
     - target: {fileID: 5316028352362972222, guid: 5297a43ba19d69a469c84a0a2807e2c0,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: -0.7071058
       objectReference: {fileID: 0}
     - target: {fileID: 5316028352362972222, guid: 5297a43ba19d69a469c84a0a2807e2c0,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 1
+      value: 0.70710784
       objectReference: {fileID: 0}
     - target: {fileID: 5316028352362972222, guid: 5297a43ba19d69a469c84a0a2807e2c0,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5316028352362972222, guid: 5297a43ba19d69a469c84a0a2807e2c0,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5316028352362972222, guid: 5297a43ba19d69a469c84a0a2807e2c0,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 180
+      value: 270
       objectReference: {fileID: 0}
     - target: {fileID: 5316028352362972222, guid: 5297a43ba19d69a469c84a0a2807e2c0,
         type: 3}
@@ -427,6 +475,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222729250492455406, guid: 5297a43ba19d69a469c84a0a2807e2c0,
+        type: 3}
+      propertyPath: title
+      value: Hukum Idempotent AND
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222729250492455406, guid: 5297a43ba19d69a469c84a0a2807e2c0,
+        type: 3}
+      propertyPath: longText
+      value: Sebuah gerbang AND dengan dua Input A juga akan memiliki Output A. 
+        (1 AND 1 = 1, 0 AND 0 = 0).
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5297a43ba19d69a469c84a0a2807e2c0, type: 3}
